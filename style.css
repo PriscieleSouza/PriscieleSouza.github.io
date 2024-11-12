@@ -1,0 +1,192 @@
+/* * {
+  font-size: 62.5%;
+} */
+
+/* 
+Colors: cream [fcfbf4] dark purple [11001c] old gold [eca825]
+*/
+
+body {
+  height: initial;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  color: #fcfbf4;
+  margin: 0 auto;
+  margin-bottom: 8rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+}
+
+header {
+  /* background-color: #344c36; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 100;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav {
+  padding: 1rem 2rem; /* Adiciona padding à navbar */
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+a {
+  display: inline-block;
+  font-size: 25px;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 36px;
+  transition: 0.6s;
+  font-family: "Cagliostro", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+#Home {
+  background-color: #344c36;
+  color: #dbd2c1;
+  display: flex;
+  position: relative;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  min-height: 100vh; /* Garante que a section ocupe a altura da tela */
+}
+
+#Home svg {
+  position: absolute;
+  z-index: 2;
+}
+
+.img-home {
+  position: absolute;
+  top: 6rem;
+  left: 8rem;
+  z-index: 1;
+  width: 30rem;
+  height: auto;
+  align-self: center;
+}
+
+#Resume {
+  background-color: #344c36;
+  color: #f6f1e3;
+}
+#Work {
+  background-color: #f6f1e3;
+  color: #344c36;
+}
+
+.contact {
+  background-color: #eca825;
+  width: 6rem;
+  text-align: center;
+}
+
+header img {
+  width: 2rem;
+  height: auto;
+}
+
+section {
+  padding-top: 7.5rem;
+  box-sizing: border-box;
+  display: grid;
+  min-height: 100vh;
+  height: 100%;
+}
+
+#About {
+  grid-template-columns: repeat(3, 1fr);
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f6f1e3;
+  color: #344c36;
+}
+
+#about-img {
+  grid-column-start: 1;
+}
+#about-text {
+  grid-column-start: 3;
+}
+
+nav a:hover {
+  color: #eca825;
+}
+
+div {
+  padding: 100px 0;
+  text-align: center;
+  vertical-align: baseline;
+}
+
+h2 {
+  text-align: center;
+  font-size: 50px;
+}
+
+.card {
+  width: 25rem; /* Largura do card - ajuste conforme necessário */
+  height: 28rem;
+  border: none;
+  padding: 0;
+  box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+}
+
+.card img {
+  /* display: relative; Remove espaço extra abaixo da imagem */
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: 100%;
+  border-radius: 2rem;
+  object-fit: fit;
+}
+
+.card p {
+  text-rendering: optimizeLegibility;
+  text-align: justify;
+  font-size: 190%;
+}
+
+.card a {
+  color: #f6f1e3;
+}
+
+.pill {
+  display: inline-block;
+  padding: 10px 20px; /* Ajuste o espaçamento interno conforme necessário */
+  background-color: #f0542d; /* Cor de fundo laranja */
+  color: white; /* Cor do texto branca */
+  border-radius: 20px; /* Bordas arredondadas */
+  text-decoration: none; /* Remove a decoração do link */
+  font-weight: bold; /* Texto em negrito */
+}
+
+#linkedin::before {
+  content: "\002615"; /* Adiciona o ícone de café */
+  margin-right: 5px; /* Espaçamento entre o ícone e o texto */
+}
+
+#nascimento::before {
+  content: "\00272F"; /* Adiciona o ícone de estrela */
+  margin-right: 5px; /* Espaçamento entre o ícone e o texto */
+}
+
+/* Estilos responsivos - ajuste os breakpoints conforme necessário */
+@media (max-width: 768px) {
+  #about {
+    display: inline;
+    flex-direction: column; /* Alinha os cards verticalmente em telas menores */
+    align-items: center; /* Centraliza os cards horizontalmente */
+  }
+}
