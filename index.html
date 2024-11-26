@@ -18,22 +18,20 @@
 
   <body>
     <header>
-      <nav class="name">
-        <img decoding="async" src="fox.png" alt="Fox Icon" />
-        <a href="#Home">Prisciele Vitoria</a>
-      </nav>
-      <nav class="menu">
-        <a href="#About">Sobre Mim</a>
-        <a href="#Resume">Resume</a>
-        <a href="#Work">Work</a>
-      </nav>
-      <nav class="contact">
-        <a href="#Contact">Contact</a>
-      </nav>
+      <div class="navbar">
+        <a class="logo" href="#Home">Prisciele Vitoria</a>
+        <nav>
+          <ul>
+            <li><a href="#About">Sobre</a></li>
+            <li><a href="#Resume">Estudos</a></li>
+            <li><a href="#Work">Projetos</a></li>
+            <li><a href="#Contact" class="btn">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-
     <section id="Home">
-      <svg width="900" height="420" viewBox="0 0 600 300">
+      <svg viewBox="0 0 600 300">
         <text
           x="20"
           y="94"
@@ -99,15 +97,136 @@
 
     <section id="Resume">
       <div class="education">
-        <a></a>
+        <h2>Formação Acadêmica</h2>
+        <table>
+          <tr>
+            <td class="year">2022 - 2026</td>
+            <td>
+              <strong>Bacharelado em Sistemas de Informação</strong><br />
+              UNASP/Universidade Adventista de São Paulo
+            </td>
+          </tr>
+          <tr>
+            <td class="year">2019 - 2021</td>
+            <td>
+              <strong>Técnico em Segurança do Trabalho</strong><br />
+              Grau Técnico<br />
+              Técnico em Informática - CETAI / Cidade dos Meninos
+            </td>
+          </tr>
+          <tr>
+            <td class="year">2010 - 2011</td>
+            <td>
+              <strong>Aspectos Comportamentais de Gestão de Pessoas</strong
+              ><br />
+              Grau Técnico
+            </td>
+          </tr>
+          <tr>
+            <td class="year">2024/03 - 2024/05</td>
+            <td>
+              <strong>Bootcamp Data Analytics</strong><br />
+              WoMaker Code
+            </td>
+          </tr>
+          <tr>
+            <td class="year">2024/06 - 2024/10</td>
+            <td>
+              <strong>Fundamentos da Ciência de Dados</strong><br />
+              FM2S
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="skills" class="skills-section">
+        <h2>Technical Skills</h2>
+        <div class="skills-container">
+          <!-- Software Tools -->
+          <div class="skills-category">
+            <h3>Software Tools</h3>
+            <div class="tools">
+              <div class="tool">BI</div>
+              <div class="tool">SQL</div>
+              <div class="tool">HTML</div>
+              <div class="tool">CSS</div>
+              <div class="tool">.Py</div>
+              <div class="tool">W</div>
+              <div class="tool">X</div>
+              <div class="tool">P</div>
+            </div>
+          </div>
+
+          <!-- Web Development -->
+          <div class="skills-category">
+            <h3>Languages</h3>
+            <!-- <p>Basic knowledge of:</p> -->
+            <ul class="web-skills">
+              <li>Python</li>
+              <li>Power BI</li>
+              <li>MySQL</li>
+              <li>Data Analysis</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Skill Tags -->
+        <div class="skill-tags">
+          <div class="tag">Web Development</div>
+          <div class="tag">UI/UX</div>
+          <div class="tag">Data Analysis</div>
+          <div class="tag">Team Management</div>
+        </div>
       </div>
     </section>
 
     <section id="Work">
-      <h2>Teste outra frase</h2>
-      <a href="https://www.google.com.br/" target="_self">google</a>
+      <div id="language-hobbies" class="language-hobbies-section">
+        <!-- Language Section -->
+        <div class="language">
+          <h2>Idiomas</h2>
+          <div class="language-items">
+            <div class="language-item">
+              <h3>Português</h3>
+              <p>Nativa</p>
+            </div>
+            <div class="language-item">
+              <h3>Inglês</h3>
+              <p>Básico</p>
+            </div>
+            <div class="language-item">
+              <h3>Espanhol</h3>
+              <p>Básico</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hobbies Section -->
+        <div class="hobbies">
+          <h2>Passatempos e interesses</h2>
+          <div class="hobby-items">
+            <div class="hobby-item">
+              <div class="icon">🎵</div>
+              <p>Gosto de ouvir músicas interncaionais</p>
+            </div>
+            <div class="hobby-item">
+              <div class="icon">🎬</div>
+              <p>Assistir filmes</p>
+            </div>
+            <div class="hobby-item">
+              <div class="icon">🎨</div>
+              <p>Pintar no tempo livre</p>
+            </div>
+            <div class="hobby-item">
+              <div class="icon">♟️</div>
+              <p>Jogos de tabuleiro</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </body>
-
-  <script src="script.js"></script>
 </html>

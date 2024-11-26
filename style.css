@@ -1,56 +1,77 @@
-/* * {
-  font-size: 62.5%;
-} */
-
-/* 
-Colors: cream [fcfbf4] dark purple [11001c] old gold [eca825]
-*/
-
 body {
-  height: initial;
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  color: #fcfbf4;
-  margin: 0 auto;
-  margin-bottom: 8rem;
   font-family: "Poppins", sans-serif;
-  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f8f8f8;
 }
 
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav a:hover {
+  color: black;
+}
+
+section {
+  min-height: 100vh;
+  width: auto;
+}
+
+.btn {
+  background-color: #ff9900;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+/* Header */
 header {
-  /* background-color: #344c36; */
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
-  height: auto;
-  z-index: 100;
-  align-items: center;
+  height: 5%;
+  z-index: 3;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.navbar {
   display: flex;
   justify-content: space-between;
 }
 
-header nav {
-  padding: 1rem 2rem; /* Adiciona padding à navbar */
-  width: 100%;
-  overflow: hidden;
-  text-align: center;
+.navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: flex-end;
+  padding-right: 2rem;
 }
 
-a {
-  display: inline-block;
-  font-size: 25px;
-  color: black;
-  text-decoration: none;
-  font-weight: 500;
-  padding: 8px 36px;
-  transition: 0.6s;
-  font-family: "Cagliostro", sans-serif;
-  font-weight: 600;
-  font-style: normal;
+.navbar li {
+  margin: 0 15px;
 }
 
+.scroll-btn {
+  margin-top: 20px;
+  color: #ff9900;
+}
+
+.logo {
+  font-size: 2.5rem;
+}
+
+/* Home Section */
 #Home {
   background-color: #344c36;
   color: #dbd2c1;
@@ -61,105 +82,57 @@ a {
   min-height: 100vh; /* Garante que a section ocupe a altura da tela */
 }
 
-#Home svg {
-  position: absolute;
-  z-index: 2;
-}
-
 .img-home {
   position: absolute;
-  top: 6rem;
+  top: 8rem;
   left: 8rem;
-  z-index: 1;
-  width: 30rem;
-  height: auto;
+  z-index: 2;
+  width: auto;
+  height: 78%;
   align-self: center;
 }
 
-#Resume {
-  background-color: #344c36;
-  color: #f6f1e3;
-}
-#Work {
-  background-color: #f6f1e3;
-  color: #344c36;
-}
-
-.contact {
-  background-color: #eca825;
-  width: 6rem;
-  text-align: center;
+#Home svg {
+  position: absolute;
+  z-index: 1;
+  height: 70%;
+  width: 90%;
+  aspect-ratio: 16 / 9;
 }
 
-header img {
-  width: 2rem;
-  height: auto;
-}
-
-section {
-  padding-top: 7.5rem;
-  box-sizing: border-box;
-  display: grid;
-  min-height: 100vh;
-  height: 100%;
-}
-
+/* About Section */
 #About {
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   padding-left: 5%;
   padding-right: 5%;
   background-color: #f6f1e3;
   color: #344c36;
+  align-items: center;
+  justify-content: space-around;
 }
 
-#about-img {
-  grid-column-start: 1;
-}
-#about-text {
-  grid-column-start: 3;
-}
-
-nav a:hover {
-  color: #eca825;
-}
-
-div {
-  padding: 100px 0;
-  text-align: center;
-  vertical-align: baseline;
-}
-
-h2 {
-  text-align: center;
-  font-size: 50px;
-}
-
-.card {
-  width: 25rem; /* Largura do card - ajuste conforme necessário */
-  height: 28rem;
-  border: none;
-  padding: 0;
-  box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
-}
-
-.card img {
+#About img {
   /* display: relative; Remove espaço extra abaixo da imagem */
-  max-width: 100%;
-  max-height: 100%;
   width: auto;
-  height: 100%;
+  height: 58%;
+  max-width: 100%;
   border-radius: 2rem;
   object-fit: fit;
 }
 
-.card p {
+#About p {
   text-rendering: optimizeLegibility;
   text-align: justify;
   font-size: 190%;
 }
 
-.card a {
+#About a {
   color: #f6f1e3;
+}
+
+#About .card {
+  width: 50%;
+  height: auto;
 }
 
 .pill {
@@ -172,21 +145,208 @@ h2 {
   font-weight: bold; /* Texto em negrito */
 }
 
-#linkedin::before {
-  content: "\002615"; /* Adiciona o ícone de café */
-  margin-right: 5px; /* Espaçamento entre o ícone e o texto */
+/* Resume Section */
+#Resume {
+  display: flex;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #344c36;
+  color: #f6f1e3;
+  align-items: center;
+  justify-content: space-around;
 }
 
-#nascimento::before {
-  content: "\00272F"; /* Adiciona o ícone de estrela */
-  margin-right: 5px; /* Espaçamento entre o ícone e o texto */
+/* Education Div */
+.education table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
-/* Estilos responsivos - ajuste os breakpoints conforme necessário */
-@media (max-width: 768px) {
-  #about {
-    display: inline;
-    flex-direction: column; /* Alinha os cards verticalmente em telas menores */
-    align-items: center; /* Centraliza os cards horizontalmente */
-  }
+.education table tr {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.education table td {
+  font-size: 2.1rem;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.education .year {
+  flex: 0 0 30%;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #d99e22;
+  text-align: left;
+}
+
+.education td {
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.education td strong {
+  font-size: 1.8rem;
+  color: black;
+  font-weight: bold;
+}
+
+/* Skills Div */
+.skills-section {
+  padding: 50px;
+  background-color: #2b4035;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.skills-category {
+  flex: 1;
+  padding: 20px;
+}
+
+.skills-category h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #f8f8f8;
+}
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tool {
+  width: 3.6rem;
+  height: 3.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+  color: #333;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.web-skills {
+  list-style: none;
+  padding: 0;
+}
+
+.web-skills li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #f8f8f8;
+}
+
+/* Skill Tags */
+.skill-tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.tag {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Work Section */
+#Work {
+  display: flex;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f6f1e3;
+  color: #344c36;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.8rem;
+}
+
+/* Language Section */
+.language-hobbies-section {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.language {
+  text-align: center;
+}
+
+.language-items {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.language-item {
+  text-align: center;
+}
+
+.language-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  color: #2b4035;
+}
+
+.language-item p {
+  font-size: 1.8rem;
+  font-weight: normal;
+  color: #333;
+}
+
+/* Hobbies Section */
+.hobbies {
+  text-align: center;
+}
+
+.hobby-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.hobby-item {
+  text-align: center;
+  width: 6.5rem;
+}
+
+.hobby-item .icon {
+  font-size: 2.5rem;
+  color: #d99e22;
+  margin-bottom: 10px;
+}
+
+.hobby-item p {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
 }
